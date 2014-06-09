@@ -1,11 +1,14 @@
-******************************************************************************************************
+Purpose
+=============
 This is the code the challenge"Chalearn Looking at People 2014“
 Gist: Delief Networks (Gaussian Bernoulli RBM as first layer) + Hidden Markov Networks
 by Di WU: stevenwudi@gmail.com, 2015/05/27
 
+
 Citation
-******************************************************************************************************
+-------
 If you use this toolbox as part of a research project, please consider citing the corresponding paper
+******************************************************************************************************
 @inproceedings{wu2014leveraging,
   title={Leveraging Hierarchical Parametric Networks for Skeletal Joints Based Action Segmentation and Recognition},
   author={Wu, Di and Shao, Ling},
@@ -14,6 +17,9 @@ If you use this toolbox as part of a research project, please consider citing th
 }
 ******************************************************************************************************
 
+
+Dependency: Theano
+-------
 Some dependent libraries requirements:
 (1) Theano: for deep learning tasks http://deeplearning.net/software/theano/
 			Note that Wudi change some of the functionalities(Deep Belief Networks, Gaussian Bernoulli Restricted Boltzmann Machines)
@@ -21,7 +27,8 @@ Some dependent libraries requirements:
 
 
 	
--------------------------------------------------------------------------------------------
+Test
+-------
 To reproduce the experimental result for test submission, there is a Python file:
 
 Step3_SK_Test_prediction.py and there are three paths needs to be changed accordingly:
@@ -35,7 +42,8 @@ outSubmision=r'.\training\test_submission'
 
 It takes about ~20 second for each example file using only skeleton information. (I use Theano GPU model, but I reckon CPU model should almost of the same speed)
 
--------------------------------------------------------------------------------------------
+Train
+-------
 To train the network, you first need to extract the skeleton information 
 1)Step1_SK_Neutral_Realtime.py--> extract neutral frames (aka., 5 frames before and after the gesture)
 2) Step1_SK_Realtime.py--> extract gesture frames
@@ -44,8 +52,8 @@ To train the network, you first need to extract the skeleton information
 
 Voila, here you go.
 
--------------------------------------------------------------------
+
 Contact
-=======
+-------
 If you read the code and find it really hard to understand, please send feedback to: stevenwudi@gmail.com
 Thank you!
