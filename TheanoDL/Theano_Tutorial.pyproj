@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>9f652ea6-cee9-4214-9774-25d00ce2972c</ProjectGuid>
+    <ProjectHome>
+    </ProjectHome>
+    <StartupFile>GRBM_DBN.py</StartupFile>
+    <SearchPath>code\</SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>Theano_Tutorial</Name>
+    <RootNamespace>Tutorial</RootNamespace>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <CommandLineArguments>-W ignore::DeprecationWarning</CommandLineArguments>
+    <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
+    <IsWindowsApplication>False</IsWindowsApplication>
+    <InterpreterId>{947cee96-2ef3-4b77-b850-f04b2d86f6b6}</InterpreterId>
+    <InterpreterVersion>2.7</InterpreterVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="cA.py" />
+    <Compile Include="convolutional_mlp.py" />
+    <Compile Include="dA.py" />
+    <Compile Include="DBN.py" />
+    <Compile Include="DBN_MNIST.py" />
+    <Compile Include="grbm.py" />
+    <Compile Include="GRBM_DBN.py" />
+    <Compile Include="LogisticRegressionMNIST.py" />
+    <Compile Include="logistic_cg.py" />
+    <Compile Include="logistic_sgd.py" />
+    <Compile Include="Mean_DBN.py" />
+    <Compile Include="midi\constants.py" />
+    <Compile Include="midi\DataTypeConverters.py" />
+    <Compile Include="midi\EventDispatcher.py" />
+    <Compile Include="midi\example_mimimal_type0.py" />
+    <Compile Include="midi\example_print_channel_0.py" />
+    <Compile Include="midi\example_print_events.py" />
+    <Compile Include="midi\example_print_file.py" />
+    <Compile Include="midi\example_transpose_octave.py" />
+    <Compile Include="midi\MidiFileParser.py" />
+    <Compile Include="midi\MidiInFile.py" />
+    <Compile Include="midi\MidiInStream.py" />
+    <Compile Include="midi\MidiOutFile.py" />
+    <Compile Include="midi\MidiOutStream.py" />
+    <Compile Include="midi\MidiToText.py" />
+    <Compile Include="midi\RawInstreamFile.py" />
+    <Compile Include="midi\RawOutstreamFile.py" />
+    <Compile Include="midi\utils.py" />
+    <Compile Include="midi\__init__.py" />
+    <Compile Include="mlp.py" />
+    <Compile Include="rbm.py" />
+    <Compile Include="rbm_gnumpy.py" />
+    <Compile Include="rbm_mean.py" />
+    <Compile Include="RBM_Pylearn2.py" />
+    <Compile Include="rnnrbm.py" />
+    <Compile Include="SdA.py" />
+    <Compile Include="test.py" />
+    <Compile Include="Tutorial.py" />
+    <Compile Include="utils.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="{947cee96-2ef3-4b77-b850-f04b2d86f6b6}\2.7" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="midi\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="midi\changes.txt" />
+    <Content Include="midi\license.txt" />
+    <Content Include="midi\readme.txt" />
+    <Content Include="midi\version.txt" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <PtvsTargetsFile>$(VSToolsPath)\Python Tools\Microsoft.PythonTools.targets</PtvsTargetsFile>
+  </PropertyGroup>
+  <Import Condition="Exists($(PtvsTargetsFile))" Project="$(PtvsTargetsFile)" />
+  <Import Condition="!Exists($(PtvsTargetsFile))" Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
+</Project>
