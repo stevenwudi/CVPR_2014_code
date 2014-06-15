@@ -38,9 +38,11 @@ To reproduce the experimental result for test submission, there is a Python file
 `Step3_SK_Test_prediction.py` and there are three paths needs to be changed accordingly:
 
 line: 60, Data folder (Test data)
-data_path=os.path.join("I:\Kaggle_multimodal\Test\Test\\")  
+data_path=os.path.join("I:\Kaggle_multimodal\Test\Test\\") 
+ 
 line: 62, Predictions folder (output)
 outPred=r'.\training\test'
+
 line: 64, Submision folder (output)
 outSubmision=r'.\training\test_submission'
 
