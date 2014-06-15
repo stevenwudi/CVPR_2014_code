@@ -9,7 +9,7 @@ by Di WU: stevenwudi@gmail.com, 2015/05/27
 
 Citation
 -------
-If you use this toolbox as part of a research project, please consider citing the corresponding paper
+If you use this toolbox as part of a research project, please cite the corresponding paper
 ******************************************************************************************************
 ```yaml
 @inproceedings{wu2014leveraging,
@@ -50,8 +50,10 @@ It takes about ~20 second for each example file using only skeleton information.
 
 Train
 -------
-To train the network, you first need to extract the skeleton information 
+To train the network, you first need to extract the skeleton information
+
 1)`Step1_SK_Neutral_Realtime.py`--> extract neutral frames (aka., 5 frames before and after the gesture)
+
 2)`Step1_SK_Realtime.py`--> extract gesture frames
 
 3)`Step1_DBN_Strucutre2.py`-->Start training the networks (`Step1_DBN.py` specifies a smaller networks, train faster, but the larger the net is always better)
