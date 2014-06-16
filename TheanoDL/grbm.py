@@ -27,7 +27,7 @@ class GBRBM(RBM):
         wx_b = T.dot(v_sample, self.W) + self.hbias
         vbias_term = 0.5 * T.dot((v_sample - self.vbias), (v_sample - self.vbias).T)
         hidden_term = T.sum(T.log(1 + T.exp(wx_b)), axis=1)
-        return -hidden_term - vbias_term
+        return -hidden_term - T.diagonal(vbias_term)
 
     # --------------------------------------------------------------------------
     # overwrite sampling function (here you sample from normal distribution)
