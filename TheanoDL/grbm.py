@@ -51,5 +51,5 @@ class GBRBM(RBM):
 
         """
 
-        rms_cost = T.mean(T.sum((self.input -  pre_sigmoid_nv)** 2))
+        rms_cost = T.mean(T.sum((self.input -  pre_sigmoid_nv)** 2, axis=1))
         return rms_cost
