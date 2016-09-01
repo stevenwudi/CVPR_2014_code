@@ -60,6 +60,17 @@ To train the network, you first need to extract the skeleton information
 
 Voila, here you go.
 
+Dataset
+-------
+According to some reader recommendation, I supplement the links of the datasets used in the paper as follows:
+
+1) `ChaLearn Italian Gesture Recognition` --> [http://gesture.chalearn.org/2013-multi-modal-challenge](http://gesture.chalearn.org/2013-multi-modal-challenge)
+
+2) `MSR Action3D` --> [http://research.microsoft.com/en-us/um/people/zliu/actionrecorsrc](http://research.microsoft.com/en-us/um/people/zliu/actionrecorsrc)
+
+3) `MSRC12 ` --> [http://research.microsoft.com/en-us/um/cambridge/projects/msrc12](http://research.microsoft.com/en-us/um/cambridge/projects/msrc12)
+
+(If you use the datasets, please cite the corresponding original paper. Thanks)
 
 Contact
 -------
