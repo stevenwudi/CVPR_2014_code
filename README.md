@@ -66,6 +66,8 @@ According to some reader recommendation, I supplement the links of the datasets 
 
 1) `ChaLearn Italian Gesture Recognition` --> [http://gesture.chalearn.org/2013-multi-modal-challenge](http://gesture.chalearn.org/2013-multi-modal-challenge)
 
+You should download from this dataset from Kaggle platform. [https://www.kaggle.com/c/multi-modal-gesture-recognition/data](https://www.kaggle.com/c/multi-modal-gesture-recognition/data)
+
 2) `MSR Action3D` --> [http://research.microsoft.com/en-us/um/people/zliu/actionrecorsrc](http://research.microsoft.com/en-us/um/people/zliu/actionrecorsrc)
 
 3) `MSRC12 ` --> [http://research.microsoft.com/en-us/um/cambridge/projects/msrc12](http://research.microsoft.com/en-us/um/cambridge/projects/msrc12)
